@@ -1,0 +1,797 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'poppins' sans-serif;
+}
+
+/* #############################cantainber##################### */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ################################# Header styling ###################  */
+.header{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: black;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    opacity: 0.9;
+    z-index: 999;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}    
+
+
+.navbar .logo{
+    order: 1;
+    color: lightseagreen;
+    /* margin-top: 1rem; */
+    font-size: 3.5rem;
+    line-height: 8rem;
+}
+
+.navbar ul{
+    order: 2;
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin:  2rem;
+    /* margin-bottom: 1rem; */
+    line-height: 8rem;
+}
+
+.navbar ul li a{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    /* border: 1px solid lightseagreen; */
+    background: lightseagreen;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    background-color: #fff;
+    color: orange;
+}
+
+/* ###############################3  SHOWCASE STYLING  ###############*/
+.showcase-area{
+    height: 100vh;
+    background-image: -webkit-linear-gradient(rgba(32,178,171,0.75), rgba(32,178,171,0.75)),url('/Loom_soolar_Project/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.showcase-area .showcase-container{
+    display: flex;
+    max-width: 100%;
+}
+
+
+
+.showcase-area .showcase-content{
+    text-align: center;
+    padding: 15rem  0 5rem;
+}
+
+.showcase-area .showcase-content .showcase-content-inner{
+    width: 50%;
+    order: 1;
+    margin: 0 ;
+}
+
+.showcase-area .showcase-content .showcase-content-inner h1{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    color: #fff;
+    line-height: 1.1;
+    text-align: justify;
+    /* margin: 0.67em 0; */
+}
+p{
+  font-size: 1.7rem;  
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  margin: 0 0 1rem;
+  color: #fff;
+  text-align: justify;
+}
+
+.showcase-area .showcase-content .showcase-content-inner h2{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: justify;
+    /* letter-spacing: 1rem; */
+}
+
+.showcase-area .showcase-content .showcase-content-inner h2 span{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.showcase-area .showcase-content .showcase-content-inner .btn{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    border-radius: 3rem;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    /* margin-right: 15rem; */
+    /* touch-action: manipulation; */
+    /* background-image: none; */
+}
+
+.showcase-area .showcase-content .showcase-content-inner a{
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.3s ease-in;
+}
+
+.showcase-area .showcase-content .showcase-content-inner a:hover{
+    background: darkcyan;
+    border: none;
+}
+
+/*  ########################form styling ############### */
+.showcase-area .form-container{
+    margin: 0 auto 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-top: 12rem;
+    order: 2;
+    width: 50%;
+}
+
+.form-content{
+    background: #fff;
+    padding: 3rem;
+    /* position: absolute;
+    right: 5%;
+    top: 25%; */
+}
+
+.form-content h2{
+    color: lightseagreen;
+    text-align: left;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.form-content h3{
+    color: #484848;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+/* .form-content form{
+    margin-top: 2.5rem;
+} */
+
+.input-box{
+    margin-bottom: 1.5rem;
+}
+
+.input-box input{
+    display: block;
+    height: 4rem;
+    width: 100%;
+    border: 3px solid #ddd;
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem ;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 3px;
+    outline: none;
+    /* text-align: start; */
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+     /* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+}
+
+.btn{
+    width: 100%;
+    font-size: rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: lightseagreen;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border: 3px solid lightseagreen;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: visible;
+}
+
+/* ###################feature styling##################### */
+section.feature{
+    background: #f1f1f1;
+    padding: 10rem 0;
+}
+
+section.feature .section-heading{
+    margin-bottom: 10rem;
+}
+
+section.feature .section-heading h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #484848;
+    /* margin-top: 2.5rem; */
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+section.feature .section-heading p{
+    color: #777;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 0 8rem;
+    margin: 0 0 1rem;
+    text-align: justify;
+}
+
+hr{
+    max-width: 100px;
+    margin: 2.5rem auto 0;
+    border-width: 5px;
+    border:0;
+    border-top: 1px solid #eee;
+    box-sizing: content-box;
+    height: 0;
+    border-color: rgba(31, 84, 154, 0.9);
+}
+
+/* Section container styling */
+section.feature .section-container{
+    position: relative;
+    min-height: 1px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin: 0 auto;
+}
+
+section.feature .feature-container{
+    display: flex;
+}
+
+section.feature .section-container .images{
+    display: block;
+    max-width:100%;
+    height: auto;
+}
+
+
+
+section.feature .item-container{
+    margin-top: 2rem;    
+}
+
+section.feature .item-container .row{
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 5rem;
+}
+
+section.feature .item-container .col{
+    min-height: 1px;
+    padding-right: 3rem;
+    padding-left: 5rem;
+}
+
+section.feature .item-feature{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+section.feature .item-feature i{
+    font-size: 4rem;
+    color: #fff;
+    background: lightseagreen;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+section.feature .item-feature h2{
+    color: #484848;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+section.feature .item-feature p{
+    color: #777;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin:0 0 1rem;
+    text-align: justify;
+}
+
+/* ####################### Section Detail ####################333*/
+section.detail{
+    padding: 10rem 0;
+}
+
+.section-row{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.detail-heading{
+    max-width: 100%;
+    width: 50%;
+    /* position: relative; */
+    min-height: 1px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.detail-heading .icn{
+    font-size: 6rem;
+    font-weight: 300;
+    color: lightseagreen;
+    padding: 1.5rem;
+    border: 3px solid lightskyblue; 
+    border-radius: 50%;
+}
+
+.detail-heading h2{
+    color: #484848;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+}
+
+.detail-heading p{
+    color: #777;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    margin: 0 0 1rem;
+    /* text-align: justify; */
+}
+
+.detail-heading a{
+    text-decoration: none;
+}
+
+.detail-heading .btn-1{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: lightseagreen;
+    border: 2px solid lightseagreen;
+    border-radius: 300px;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    margin-top: 1rem;
+    transition: 0.35s;
+}
+
+.detail-heading .btn-1:hover{
+    color: #fff;
+    background: lightseagreen;
+}
+
+/* ###########  panel styling */
+.detail .collapsible{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1.8rem ;
+    width: 50%;
+    border: none;
+    text-align: center;
+    margin-left: 20rem;
+    outline: none;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover{
+    background-color: #ccc;
+}
+  
+  /* Style the collapsible content. Note: hidden by default */
+.content{
+    color: #333;
+    padding: 0 18px;
+    width: 50%;
+    display: none;
+    overflow: hidden;
+    background: #f1f1f1;
+    margin-left: 20rem;
+    margin-bottom: 1rem;
+}
+
+.content p{
+    color: #777;
+}
+
+/* .panel-title a:after {
+    font-family:Fontawesome;
+    content:'\f077';
+    float:right;
+    font-size:10px;
+    font-weight:300;
+}
+.panel-title a.collapsed:after {
+    font-family:Fontawesome;
+    content:'\f078';
+} */
+
+
+/* .detail .panel{
+    margin-top:  0px !important;
+    border-radius: 0px !important;
+    border: none;
+    border-bottom-color: #d7d8dc;
+
+}
+
+.detail .panel-heading{
+    border-radius: 0px !important;
+    background: #f5f6f8;
+    padding: 0px !important;
+    border-bottom: 0px solid #dddee2;
+}
+
+.detail .panel-heading .panel-title a{
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 2.3rem 1.5rem;
+    font-weight: 300;
+    color: #454444;
+    background-color: #ffffff;
+    line-height: 29px;
+    position: relative;
+}
+
+.detail .panel-heading .panel-title a:hover,
+.detail .panel-heading .panel-title a:active{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: lightseagreen;
+}
+
+.detail .panel-heading .panel-title a span{
+    float: left;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    transition: all 0.4s;
+}
+
+.detail .panel-heading .panel-title a .bar,
+.detail .panel-heading .panel-title a .bar::after{
+    border-width: 1px;
+    border-style: solid;
+    width: 21px;
+    border-radius: 1rem;
+    transition: all 0.4s;
+}
+
+.detail .panel-heading .panel-title a .bar::after{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 3.8rem;
+    left: 1.5rem;
+}
+
+.detail .panel-heading .panel-title a.collapsed{
+    background-color: #f5f6f8 ;
+    border-bottom: 1px solid #eeeef3;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.detail .panel-heading .panel-title a.collapsed .bar{
+    border-color: #75767f;
+}
+
+.detail .panel-heading .panel-title a.collapsed .bar::after{
+    transform: rotate(90deg);
+    border-color: #75767f;
+    transition: all 0.4s;
+
+}
+
+.panel-collapse{
+    background-color: #ffffff;
+    border: 0px solid ;
+    line-height: 2.6rem;
+    font-weight: 300;
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 0px;
+    color: #60626d;
+}
+ */
+
+
+
+
+
+
+
+/* .section-row .panel{ */
+    /* border-radius: 4px; */
+    /* border-color: #ddd;
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.section-row .panel .panel-heading{
+    color: #333;
+    background: #f1f1f1;
+    border-color: #ddd;
+    padding: 0 1.5rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.section-row .panel .panel-title{
+    font-size: 2rem;
+    color: inherit;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.section-row .panel a{
+    padding: 1rem 0;
+    display: block;
+    color: #454444;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after{
+    transform: rotate(90deg);
+    color: #15549a;
+}
+
+.panel-heading [data-toggle="collapse"]::after{
+    content: '\f054';
+    float: right;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    box-sizing: border-box;
+}
+
+.section-row .panel .collapse{
+    display: none;
+}
+
+.section-row .panel .panel-collapse .panel-body{
+    border-top-color: black;
+    border-top: 1px solid black;
+    padding: 1.5rem;
+}
+
+.section-row .panel .panel-collapse .panel-body strong{
+    border-top: 1px solid black;
+    padding: 1.5rem; 
+    font-weight: 700;
+}
+.panel-body{
+    padding:1.5rem;
+} 
+
+/* ########################### about section styling ###################### */
+section.about{
+    text-align: center;
+    padding: 10rem 0;
+}
+
+section.about h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #484848;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+section.about p{
+    padding: 0.7rem 5rem 0rem;
+    color: #777;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin: 0 0 1rem;
+}
+
+section.about hr{
+    max-width: 100px;
+    margin: 2.5rem auto 0;
+    border-width: 5px;
+    border:0;
+    border-top: 1px solid #eee;
+    /* box-sizing: content-box; */
+    height: 0;
+    border-color: rgba(31, 84, 154, 0.9);
+}
+
+.about .main-heading{
+    text-align: center;
+}
+
+.about .main-heading .heading{
+    display: flex;
+}
+
+
+.about .main-heading .counter{
+    background: #fff;
+    border: 3px solid lightseagreen;
+    border-radius: 50%;
+    color: lightseagreen;
+    display: block;
+    height: 19rem;
+    width: 19rem;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 3rem;
+    padding-top: 2.6rem;
+    margin-top: 5rem;
+    padding-bottom: 2.6rem;
+}
+
+.about .main-heading .counter .counter-icon{
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+}
+
+.about .main-heading .counter .counter-icon i{
+    font-size: 3.2rem;
+    position: relative;
+    top: -10px;
+}
+.about .main-heading .counter .counter-1{
+    text-align: center;
+}
+
+.about .main-heading .counter p{
+    /* display: block; */
+    font-size: 2rem;
+    line-height: 1.5;
+    /* margin-bottom: 10rem; */
+    text-align: center;
+    color: lightseagreen;
+    margin: 0 0 50rem;
+}
+
+/* #################### brand styling */
+section.brand{
+    padding: 10rem 0;
+}
+
+.brand-heading h2{
+    font-size: 3.2rem;
+    text-align: center;
+    color: #484848;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.brand-logo ul{
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.brand-logo ul li{
+    width: 12.5%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.brand-logo ul li a{
+    display: block;
+    overflow: hidden;
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+.brand-logo ul li a img{
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+footer{
+    text-align: center;
+    color: #484848;
+    background-color: #f3f5f6;
+    padding: 2.5rem 0;
+    border: 1px solid #f3f5f6;
+    font-weight: 700;
+}
+
+/* ########################  Media Queries  #############################*/
+@media (max-width: 500px){
+    html{
+        font-size: 7px;
+    }
+    p{
+        font-size: 9px;
+    }
+    
+    
+
+
+
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
